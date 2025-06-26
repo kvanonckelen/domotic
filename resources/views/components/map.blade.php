@@ -4,7 +4,8 @@
 
 @endphp
 
-<section class="w-full p-0 m-0">
+<section class="w-full py-4 my-4">
+
     <div class="w-full h-[400px]">
         <iframe
             width="100%"
