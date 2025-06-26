@@ -2,7 +2,7 @@
 
     <footer class="bg-gray-700 text-white py-8">
         <div class="container mx-auto p-4 m-4 px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
                 <!-- Company Info -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Volt-IT</h3>

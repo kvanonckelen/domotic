@@ -1,6 +1,6 @@
 <x-layout>
     <x-home />
-    <x-services />
-    <x-map/>
+    <x-services/>
     <x-contact/>
+    <x-map/>
 </x-layout>

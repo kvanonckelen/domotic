@@ -38,19 +38,21 @@ $services = [
 ?>
 
 
-    <div class=" px-24 mx-24 mt-24 mb-24 pt-24 pb-24">
+    <div class=" sm:px-24 sm:mx-24 sm:mt-24 sm:mb-24 sm:pt-24 sm:pb-24 m-4">
         <div class="flex justify-center items-center">
             <h1 class="text-4xl font-bold text-gray-800">Onze services</h1>
         </div>
         <div class="flex justify-center items-center">
-            <p class="text-gray-600">Wij bieden verschillende services om aan uw behoeften te voldoen.</p>
+            <p class="text-gray-600 mx-4">Wij bieden verschillende services om aan uw behoeften te voldoen.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 m-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 ">
+
+            {{-- Loop through the services and display them --}}
             @foreach($services as $index => $service)
-                <div class="bg-white shadow-md rounded-lg p-6 m-3 duration-900 ease-in-out transition-all hover:shadow-xl
-                    {{ $loop->index % 2 === 0 ? 'slide-in-left' : 'slide-in-right' }}">
+                <div class="bg-white shadow-md rounded-lg sm:p-6 sm:m-3 m-1 p-2 duration-900 ease-in-out transition-all hover:shadow-xl
+                    {{ $loop->index % 2 === 0 ? 'sm:slide-in-left' : 'sm:slide-in-right' }}">
                     <h2 class="text-xl font-bold text-gray-800">{{ $service->title }}</h2>
-                    <p class="text-gray-600">{{ $service->description }}</p>
+                    <p class="text-gray-600 ">{{ $service->description }}</p>
                 </div>
             @endforeach
 

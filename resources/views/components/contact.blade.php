@@ -1,6 +1,6 @@
 @section('title', 'Contact')
 
-    <section class="min-h-screen bg-white text-black flex items-center justify-center px-4 text-xl">
+    <section class="sm:min-h-screen bg-white text-black flex items-center justify-center p-4 m-4 text-xl">
         <form action="{{ route('contact.submit') }}" method="POST" class="w-full max-w-md space-y-6">
             @csrf
             <h2 class="text-4xl font-semibold text-center">Contacteer Ons</h2>
