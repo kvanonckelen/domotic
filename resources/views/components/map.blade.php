@@ -4,9 +4,9 @@
 
 @endphp
 
-<section class="w-full py-4 my-4">
+<section style="width: 100%, margin: 0, padding: 0;">
 
-    <div class="w-full h-[400px]">
+    <div style="width: 100%, height: 400px;">
         <iframe
             width="100%"
             height="100%"
