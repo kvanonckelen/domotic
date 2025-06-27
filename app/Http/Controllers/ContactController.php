@@ -20,8 +20,10 @@ class ContactController extends Controller
         // Save to the database
         $contact = ContactMessage::create($data);
 
+        $to = config('contact.to_address');
+
         // Send email
-        Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactMessageMail($data));
+        Mail::to($to)->send(new ContactMessageMail($data));
 
         return back()->with('success', 'Je bericht werd succesvol verzonden.');
     }
