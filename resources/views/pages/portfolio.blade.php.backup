@@ -1,0 +1,58 @@
+@extends('layouts.app')
+
+@section('title', 'Realisaties')
+@section('meta_description', 'Voorbeeldcases van slimme woningen en energiebeheerprojecten door Volt-IT. Gebruik deze pagina om vertrouwen op te bouwen met concrete realisaties.')
+
+@section('content')
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Realisaties</span>
+            <h1>Laat toekomstige klanten zien wat je al gebouwd hebt.</h1>
+            <p class="lead">Je huidige portfolio-pagina is nog leeg. Dat is een gemiste kans, want deze pagina moet vertrouwen opbouwen. Hieronder staat een structuur die je meteen kunt invullen met echte projecten.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid grid-3">
+            <article class="card">
+                <span class="eyebrow">Case 01</span>
+                <h3>Nieuwbouwwoning met slimme sturing</h3>
+                <p><strong>Situatie:</strong> klant wou comfort en eenvoudige bediening zonder complexe technische interface.</p>
+                <p><strong>Oplossing:</strong> automatisering van verlichting, verwarming en scènes per leefmoment.</p>
+                <p><strong>Resultaat:</strong> meer comfort en minder manuele handelingen in dagelijkse routines.</p>
+            </article>
+
+            <article class="card">
+                <span class="eyebrow">Case 02</span>
+                <h3>Woning met zonnepanelen, batterij en laadpaal</h3>
+                <p><strong>Situatie:</strong> energieverbruik liep niet logisch samen met productie.</p>
+                <p><strong>Oplossing:</strong> slimme prioriteiten voor laden, verbruik en aansturing van grote verbruikers.</p>
+                <p><strong>Resultaat:</strong> betere afstemming tussen comfort en energiebeheer.</p>
+            </article>
+
+            <article class="card">
+                <span class="eyebrow">Case 03</span>
+                <h3>Renovatieproject met upgrade naar smart home</h3>
+                <p><strong>Situatie:</strong> bestaande technieken werkten los van elkaar.</p>
+                <p><strong>Oplossing:</strong> koppeling van aanwezige technieken binnen één logische bediening en sturing.</p>
+                <p><strong>Resultaat:</strong> woning voelde moderner, gebruiksvriendelijker en klaar voor uitbreidingen.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section-sm">
+        <div class="container card">
+            <span class="eyebrow">Wat hier nog bij moet</span>
+            <h2>Maak deze pagina krachtig met echte projectdata.</h2>
+            <ul class="checklist">
+                <li>Foto’s van de installatie en afgewerkte woning</li>
+                <li>Locatie of regio van het project</li>
+                <li>Gebruikte technieken en slimme integraties</li>
+                <li>Korte quote van de klant of concreet resultaat</li>
+            </ul>
+            <div class="actions">
+                <a href="{{ route('contact') }}" class="btn btn-primary">Case laten uitwerken</a>
+            </div>
+        </div>
+    </section>
+@endsection

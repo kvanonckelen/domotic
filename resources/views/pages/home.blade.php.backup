@@ -1,0 +1,128 @@
+@extends('layouts.app')
+
+@section('title', 'Slimme woningen en energiebeheer')
+@section('meta_description', 'Volt-IT realiseert slimme woningen met domotica, energiebeheer, sturing van laadpalen, batterijen, zonnepanelen en comfortautomatisatie.')
+
+@section('content')
+    <section class="hero">
+        <div class="container grid grid-2" style="align-items:center; gap:2rem;">
+            <div>
+                <span class="badge">Slimme woningen • energiebeheer • automatisering</span>
+                <h1>Maak van je woning een slim gebouw dat comfort en energie slim combineert.</h1>
+                <p class="lead">Volt-IT ontwerpt en integreert oplossingen voor domotica, energiebeheer en slimme sturing. Zo krijg je meer comfort, meer controle en een woning die klaar is voor zonnepanelen, batterij, warmtepomp en laadpaal.</p>
+
+                <div class="actions">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Vraag een kennismaking</a>
+                    <a href="{{ route('services') }}" class="btn btn-secondary">Bekijk onze diensten</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong>Meer comfort</strong>
+                        <span>Automatische sturing van verlichting, verwarming en aanwezigheden.</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Minder verbruik</strong>
+                        <span>Logische sturing op basis van productie, verbruik en prioriteiten.</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Eén geheel</strong>
+                        <span>Integratie van verschillende technieken in één slimme woning.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-dark">
+                <span class="eyebrow" style="color:#7dd3fc;">Voor wie</span>
+                <h2>Voor eigenaars die méér willen dan alleen een klassieke elektrische installatie.</h2>
+                <ul class="checklist">
+                    <li>Je bouwt of verbouwt en wil je woning future-proof maken.</li>
+                    <li>Je hebt zonnepanelen, een batterij of laadpaal en wil slimme sturing.</li>
+                    <li>Je wil comfort verhogen zonder constant zelf te moeten schakelen.</li>
+                    <li>Je zoekt één partner die techniek en gebruiksgemak samenbrengt.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <span class="eyebrow">Wat wij doen</span>
+            <h2>Van losse technieken naar één slim en logisch geheel.</h2>
+            <p class="lead">De commerciële sterkte van Volt-IT moet niet liggen in “wij doen elektriciteit”, maar in “wij laten technieken samenwerken”. Dat verschil moet op de homepage meteen duidelijk worden.</p>
+
+            <div class="grid grid-3" style="margin-top:2rem;">
+                <article class="card">
+                    <div class="feature-icon">01</div>
+                    <h3>Gebouwautomatisering</h3>
+                    <p>Automatiseer verlichting, screens, verwarming, koeling, ventilatie en scenario’s op basis van tijd, aanwezigheid en energieverbruik.</p>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">02</div>
+                    <h3>Energiebeheer</h3>
+                    <p>Stuur verbruikers slim aan zodat zelfverbruik stijgt en energiepieken beter beheerst worden.</p>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">03</div>
+                    <h3>Integratie</h3>
+                    <p>Laat zonnepanelen, batterij, warmtepomp, laadpaal en domotica samenwerken binnen één strategie.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm">
+        <div class="container cta-band grid grid-2" style="align-items:center;">
+            <div>
+                <span class="eyebrow" style="color:#e0f2fe;">Jouw voordeel</span>
+                <h2 style="margin-bottom:0.75rem;">Technologie moet niet complex aanvoelen om slim te zijn.</h2>
+                <p>We vertrekken vanuit hoe jij woont en leeft. Pas daarna kiezen we de juiste logica, automatisering en technieken.</p>
+            </div>
+            <div>
+                <ul class="checklist">
+                    <li>Meer comfort zonder technische overload</li>
+                    <li>Duidelijke keuzes met focus op rendement</li>
+                    <li>Sturing die past bij je woning en gewoontes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid grid-2" style="align-items:start; gap:2rem;">
+            <div>
+                <span class="eyebrow">Werkwijze</span>
+                <h2>Zo bouwen we jouw slimme woning op.</h2>
+                <div class="grid steps" style="gap:1.5rem; margin-top:2rem;">
+                    <div class="step card">
+                        <h3>Analyse van woning en technieken</h3>
+                        <p>We bekijken wat er al aanwezig is en welke installaties moeten samenwerken.</p>
+                    </div>
+                    <div class="step card">
+                        <h3>Keuzes in logica en prioriteiten</h3>
+                        <p>We bepalen hoe comfort, veiligheid en energiebeheer slim worden afgestemd.</p>
+                    </div>
+                    <div class="step card">
+                        <h3>Implementatie en optimalisatie</h3>
+                        <p>Na oplevering sturen we bij zodat de automatisering ook echt juist aanvoelt in gebruik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="eyebrow">Volgende stap</span>
+                <h2>Maak ruimte voor cases en vertrouwen.</h2>
+                <p>Op je huidige site ontbreken echte realisaties. Deze sectie is ideaal om later 2 à 3 projecten uit te lichten met foto’s, gebruikte technieken en een korte impactomschrijving.</p>
+                <ul class="checklist">
+                    <li>Projectfoto’s van technische installatie en afgewerkt resultaat</li>
+                    <li>Korte case per woning met probleem, oplossing en resultaat</li>
+                    <li>Technologieën zoals laadpaal, batterij, sturing of domotica benoemen</li>
+                </ul>
+                <div class="actions">
+                    <a href="{{ route('portfolio') }}" class="btn btn-outline">Bekijk pagina realisaties</a>
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Neem contact op</a>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
