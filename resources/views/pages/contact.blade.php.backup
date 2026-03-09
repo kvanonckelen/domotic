@@ -1,0 +1,69 @@
+@extends('layouts.app')
+
+@section('title', 'Contact')
+@section('meta_description', 'Neem contact op met Volt-IT voor domotica, slimme woningen en energiebeheer. Bespreek je project en ontdek welke automatisering bij jouw woning past.')
+
+@section('content')
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Contact</span>
+            <h1>Vertel kort wat je wil automatiseren of optimaliseren.</h1>
+            <p class="lead">Gebruik deze pagina niet als pure contactfiche, maar als startpunt voor een commercieel gesprek. Laat bezoekers voelen dat ze met een concreet project kunnen aankloppen.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid grid-2" style="align-items:start;">
+            <div class="card">
+                @if(session('success'))
+                    <div class="alert alert-success">{{ session('success') }}</div>
+                @endif
+
+                <h2>Vraag een kennismaking aan</h2>
+                <p>Beschrijf je woning, renovatie of energie-uitdaging. Dan kan je contactflow veel kwalitatiever worden dan enkel “naam, mail en bericht”.</p>
+
+                <form action="{{ route('contact.submit') }}" method="POST">
+                    @csrf
+
+                    <div>
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" value="{{ old('name') }}" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" value="{{ old('email') }}" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Telefoon</label>
+                        <input type="text" id="phone" name="phone" value="{{ old('phone') }}">
+                    </div>
+
+                    <div>
+                        <label for="message">Waarmee kunnen we helpen?</label>
+                        <textarea id="message" name="message" required>{{ old('message') }}</textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Verstuur aanvraag</button>
+                </form>
+            </div>
+
+            <aside class="card card-dark">
+                <span class="eyebrow" style="color:#7dd3fc;">Geschikt voor vragen over</span>
+                <h2>Projecten waar je meteen op wil kunnen reageren.</h2>
+                <ul class="checklist">
+                    <li>Domotica bij nieuwbouw of renovatie</li>
+                    <li>Sturing van zonnepanelen, batterij en laadpaal</li>
+                    <li>Comfortautomatisering in woningen</li>
+                    <li>Analyse van bestaande installatie en uitbreidingen</li>
+                </ul>
+
+                <div class="actions">
+                    <a href="tel:+32471780930" class="btn btn-secondary">Bel ons</a>
+                    <a href="mailto:info@volt-it.be" class="btn btn-secondary">Mail ons</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+@endsection

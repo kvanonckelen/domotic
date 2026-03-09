@@ -1,0 +1,73 @@
+@extends('layouts.app')
+
+@section('title', 'Diensten')
+@section('meta_description', 'Ontdek de diensten van Volt-IT: gebouwautomatisering, domotica, energiebeheer en integratie van laadpaal, batterij, warmtepomp en zonnepanelen.')
+
+@section('content')
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Diensten</span>
+            <h1>Gerichte diensten voor slimme woningen en energie-efficiënte gebouwen.</h1>
+            <p class="lead">In plaats van een brede lijst met losse technische services, raad ik aan om je aanbod te bundelen rond de 4 domeinen waar een klant echt op zoekt.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid grid-2">
+            <article class="card">
+                <div class="feature-icon">A1</div>
+                <h2>Domotica en automatisering</h2>
+                <p>We ontwerpen logische automatiseringen voor verlichting, zonwering, verwarming, ventilatie en dagelijkse scenario’s. Niet als gadget, maar als praktische meerwaarde voor comfort en gebruiksgemak.</p>
+                <ul class="checklist">
+                    <li>Automatische verlichting en aanwezigheidsscenario’s</li>
+                    <li>Sturing van screens, rolluiken en comfortfuncties</li>
+                    <li>Gebruikersvriendelijke bediening via app of wandinterface</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="feature-icon">A2</div>
+                <h2>Energiebeheer</h2>
+                <p>We helpen je woning slimmer omgaan met energieproductie en verbruik. Zo verhoog je zelfverbruik en vermijd je onnodige pieken waar mogelijk.</p>
+                <ul class="checklist">
+                    <li>Inzicht in verbruik, productie en prioriteiten</li>
+                    <li>Logica voor verbruikers op het juiste moment</li>
+                    <li>Ondersteuning voor batterij, warmtepomp en laadpaal</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="feature-icon">A3</div>
+                <h2>Integratie van technieken</h2>
+                <p>De grootste winst zit vaak in de koppeling tussen technieken. We verbinden componenten zodat ze informatie delen en slimmer reageren.</p>
+                <ul class="checklist">
+                    <li>Zonnepanelen en batterij integreren in de sturing</li>
+                    <li>Laadpaal slim aansturen volgens beschikbare energie</li>
+                    <li>Warmtepomp en comfortlogica beter laten samenwerken</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="feature-icon">A4</div>
+                <h2>Advies en projectbegeleiding</h2>
+                <p>Je hoeft niet alle technische keuzes vooraf te kennen. We helpen bij analyse, ontwerp, prioriteiten en gefaseerde uitrol van slimme technieken.</p>
+                <ul class="checklist">
+                    <li>Voortraject bij nieuwbouw of renovatie</li>
+                    <li>Analyse van bestaande installatie</li>
+                    <li>Duidelijke aanbevelingen met focus op haalbaarheid</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section-sm">
+        <div class="container cta-band">
+            <span class="eyebrow" style="color:#e0f2fe;">Positionering</span>
+            <h2>Zo zou ik deze pagina commercieel benaderen.</h2>
+            <p>Niet vertrekken vanuit “wij doen ook nog netwerk, onderhoud en projectmanagement”, maar vanuit de vraag van je ideale klant: hoe maak ik mijn woning slimmer, comfortabeler en energie-efficiënter?</p>
+            <div class="actions">
+                <a href="{{ route('contact') }}" class="btn btn-secondary">Bespreek jouw project</a>
+            </div>
+        </div>
+    </section>
+@endsection
