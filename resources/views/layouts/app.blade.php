@@ -378,6 +378,11 @@
                 opacity: 1;
             }
         }
+        @media (max-width: 768px) {
+            .plan-gesprek-btn {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -393,7 +398,7 @@
                 <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">Diensten</a>
                 <a href="{{ route('portfolio') }}" class="{{ request()->routeIs('portfolio') ? 'active' : '' }}">Realisaties</a>
                 <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
-                <a href="{{ route('contact') }}" class="btn btn-primary">Plan een gesprek</a>
+                <a href="{{ route('contact') }}" class="btn btn-primary plan-gesprek-btn">Plan een gesprek</a>
             </nav>
         </div>
     </header>

@@ -5,6 +5,119 @@
 
 @section('content')
 <style>
+    .energy-check-band {
+        background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        border-top: 1px solid #eef2f7;
+        border-bottom: 1px solid #eef2f7;
+    }
+
+    .energy-check-box {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1.5rem;
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+    }
+
+    .energy-check-content h2 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        color: #111827;
+        letter-spacing: -0.03em;
+    }
+
+    .energy-check-content p {
+        margin: 0 0 1.5rem;
+        color: #4b5563;
+        line-height: 1.8;
+        max-width: 62ch;
+    }
+
+    .energy-check-points {
+        display: grid;
+        gap: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .energy-check-point {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        color: #374151;
+        line-height: 1.7;
+    }
+
+    .energy-check-point-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #eff6ff;
+        color: #0369a1;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .energy-check-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .energy-check-visual {
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 22px;
+        padding: 1.5rem;
+    }
+
+    .energy-check-visual h3 {
+        margin: 0 0 1rem;
+        color: #111827;
+        font-size: 1.05rem;
+    }
+
+    .energy-flow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .energy-node {
+        min-height: 84px;
+        border-radius: 16px;
+        border: 1px solid #dbeafe;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.75rem;
+        color: #0f172a;
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+
+    .energy-check-note {
+        margin: 0;
+        color: #6b7280;
+        line-height: 1.75;
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: 960px) {
+        .energy-check-box,
+        .energy-flow {
+            grid-template-columns: 1fr;
+        }
+    }
     .home-page {
         color: #1f2937;
     }
@@ -544,6 +657,61 @@
 
             </div>
 
+        </div>
+    </section>
+
+    <section class="section energy-check-band">
+        <div class="container">
+            <div class="energy-check-box">
+                <div class="energy-check-content">
+                    <span class="eyebrow">Interactieve energiecheck</span>
+                    <h2>Ontdek hoeveel potentieel jouw woning heeft.</h2>
+                    <p>
+                        Twijfel je welke technieken in jouw woning het meeste verschil kunnen maken?
+                        Met onze visuele energiecheck krijg je een eerste indicatie van het
+                        optimalisatiepotentieel van je woning, inclusief energiebeheer,
+                        automatisatie en slimme integratie van technieken.
+                    </p>
+
+                    <div class="energy-check-points">
+                        <div class="energy-check-point">
+                            <span class="energy-check-point-icon">⚡</span>
+                            <span>Ontvang een indicatie van het mogelijke besparingspotentieel.</span>
+                        </div>
+
+                        <div class="energy-check-point">
+                            <span class="energy-check-point-icon">🏠</span>
+                            <span>Ontdek welke technieken het meeste impact kunnen hebben in jouw situatie.</span>
+                        </div>
+
+                        <div class="energy-check-point">
+                            <span class="energy-check-point-icon">📩</span>
+                            <span>Vraag nadien eenvoudig een samenvatting of advies aan.</span>
+                        </div>
+                    </div>
+
+                    <div class="energy-check-actions">
+                        <a href="{{ route('energy-check') }}" class="btn-primary">Start de energiecheck</a>
+                        <a href="{{ route('contact') }}" class="btn-secondary">Vraag vrijblijvend advies</a>
+                    </div>
+                </div>
+
+                <aside class="energy-check-visual">
+                    <h3>Wat de check visueel in kaart brengt</h3>
+
+                    <div class="energy-flow">
+                        <div class="energy-node">☀️<br>Zonnepanelen</div>
+                        <div class="energy-node">🔋<br>Batterij</div>
+                        <div class="energy-node">🏠<br>Woning</div>
+                        <div class="energy-node">🚗<br>Laadpaal</div>
+                    </div>
+
+                    <p class="energy-check-note">
+                        De check geeft een eerste beeld van hoe technieken zoals zonnepanelen,
+                        batterij, warmtepomp en laadpaal slimmer kunnen samenwerken in jouw woning.
+                    </p>
+                </aside>
+            </div>
         </div>
     </section>
 

@@ -316,6 +316,58 @@
             width: 100%;
         }
     }
+    .energy-check-teaser {
+        margin-top: 2rem;
+    }
+
+    .energy-check-teaser-box {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1.5rem;
+        align-items: center;
+        border: 1px solid #e5e7eb;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 1.6rem;
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+    }
+
+    .energy-check-teaser h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.35rem;
+        color: #111827;
+    }
+
+    .energy-check-teaser p {
+        margin: 0 0 1rem;
+        color: #4b5563;
+        line-height: 1.7;
+    }
+
+    .energy-check-mini-flow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+
+    .energy-check-mini-node {
+        border: 1px solid #dbeafe;
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    @media (max-width: 960px) {
+        .energy-check-teaser-box {
+            grid-template-columns: 1fr;
+        }
+
+        .energy-check-mini-flow {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 </style>
 
 <div class="services-page">
@@ -419,6 +471,52 @@
                     </ul>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <section class="section energy-check-teaser">
+        <div class="container">
+
+            <div class="energy-check-teaser-box">
+
+                <div>
+                    <span class="eyebrow">Twijfel je wat mogelijk is?</span>
+
+                    <h3>Doe de energiecheck voor jouw woning</h3>
+
+                    <p>
+                        Ontdek in enkele stappen hoeveel potentieel jouw woning heeft
+                        voor energiebeheer, automatisatie en integratie van technieken
+                        zoals zonnepanelen, batterij en laadpaal.
+                    </p>
+
+                    <a href="{{ route('energy-check') }}" class="btn-primary">
+                        Start de energiecheck
+                    </a>
+                </div>
+
+                <div class="energy-check-mini-flow">
+
+                    <div class="energy-check-mini-node">
+                        ☀️<br>Zonnepanelen
+                    </div>
+
+                    <div class="energy-check-mini-node">
+                        🔋<br>Batterij
+                    </div>
+
+                    <div class="energy-check-mini-node">
+                        🏠<br>Woning
+                    </div>
+
+                    <div class="energy-check-mini-node">
+                        🚗<br>Laadpaal
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
