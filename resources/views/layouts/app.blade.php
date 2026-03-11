@@ -126,6 +126,7 @@
                 radial-gradient(circle at right center, rgba(34,197,94,0.18), transparent 28%),
                 linear-gradient(135deg, #0f172a 0%, #111827 52%, #1e293b 100%);
             color: var(--white);
+            padding-top: calc(6rem + 76px);
         }
         .hero h1,
         .page-hero h1 {
