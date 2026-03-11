@@ -12,6 +12,7 @@
                 <li><a href="{{ route('services') }}">Diensten</a></li>
                 <li><a href="{{ route('portfolio') }}">Realisaties</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li><a href="{{ route('energy-check') }}">Energiecheck</a></li>
             </ul>
         </div>
 
