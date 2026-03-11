@@ -36,6 +36,7 @@
     ]
     }
     </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="cabc584f-ea60-4531-8a35-55336aaf2a05" type="text/javascript" async></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H1VRJ342Y"></script>
     <script>
