@@ -180,7 +180,8 @@
     }
 
     .btn-primary,
-    .btn-secondary {
+    .btn-secondary,
+    .btn-tertiary {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -210,6 +211,16 @@
     .btn-secondary:hover {
         border-color: #9ca3af;
         background: #f9fafb;
+    }
+
+    .btn-tertiary {
+        color: #6b7280; /* zachter grijs */
+        background: transparent;
+    }
+
+    .btn-tertiary:hover {
+        color: #111827; /* zelfde als primary tekst */
+        text-decoration: underline;
     }
 
     .hero-note {
@@ -491,8 +502,9 @@
                 in één intelligent systeem.
                 </p>
                 <div class="hero-actions">
-                    <a href="{{ route('contact') }}" class="btn-primary">Vraag vrijblijvend advies</a>
-                    <a href="{{ route('portfolio') }}" class="btn-secondary">Bekijk realisaties</a>
+                    <a href="{{ route('energy-check') }}" class="btn-primary">Start de energiecheck</a>
+                    <a href="{{ route('contact') }}" class="btn-secondary">Vraag vrijblijvend advies</a>
+                    <a href="{{ route('portfolio') }}" class="btn-tertiary">Bekijk realisaties</a>
                 </div>
 
                 <p class="hero-note">
