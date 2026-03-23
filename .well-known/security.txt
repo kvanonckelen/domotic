@@ -1,0 +1,4 @@
+Contact: mailto:info@volt-it.be
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: nl, en
+Canonical: https://www.volt-it.be/.well-known/security.txt

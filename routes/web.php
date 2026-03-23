@@ -17,6 +17,29 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 Route::view('/energiecheck', 'pages.energy-check')->name('energy-check');
 
+Route::get('/robots.txt', function () {
+    return response("User-agent: *\nDisallow:", 200)
+        ->header('Content-Type', 'text/plain');
+});
+
+Route::get('/favicon.ico', function () {
+    return response()->file(public_path('favicon.ico'));
+});
+
+Route::get('/manifest.json', function () {
+    return response()->file(public_path('manifest.json'));
+});
+
+Route::get('/browserconfig.xml', function () {
+    return response()->file(public_path('browserconfig.xml'));
+});
+
+Route::get('/.well-known/security.txt', function () {
+    return response()->file(public_path('.well-known/security.txt'));
+});
+
+Route::view('/privacy', 'pages.privacy')->name('privacy');
+
 Route::get('/sitemap.xml', function () {
 
     return Sitemap::create()
