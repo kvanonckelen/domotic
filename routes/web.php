@@ -10,6 +10,7 @@ Route::view('/', 'pages.home')->name('home');
 Route::view('/diensten', 'pages.services')->name('services');
 Route::view('/realisaties', 'pages.portfolio')->name('portfolio');
 Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/over-ons', 'pages.about')->name('about');
 
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
@@ -24,6 +25,7 @@ Route::get('/sitemap.xml', function () {
         ->add(Url::create('/portfolio'))
         ->add(Url::create('/contact'))
         ->add(Url::create('/energiecheck'))
+        ->add(Url::create('/over-ons'))
         ->toResponse(request());
 });
 

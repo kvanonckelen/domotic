@@ -10,6 +10,7 @@
             <ul class="plain-list">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('services') }}">Diensten</a></li>
+                <li><a href="{{ route('about') }}">Over ons</a></li>
                 <li><a href="{{ route('portfolio') }}">Realisaties</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 <li><a href="{{ route('energy-check') }}">Energiecheck</a></li>
@@ -20,7 +21,7 @@
             <h3>Contact</h3>
             <p>Telefoon: <a href="tel:+32471780930">+32 471 78 09 30</a><br>
             E-mail: <a href="mailto:info@volt-it.be">info@volt-it.be</a><br>
-            Regio: Booischot en ruimere regio Vlaanderen</p>
+            Regio: Heist-Op-Den-Berg en omstreken</p>
         </div>
     </div>
 
