@@ -396,6 +396,7 @@
             <nav class="menu" aria-label="Hoofdmenu">
                 <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">Diensten</a>
+                <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">Over ons</a>
                 <a href="{{ route('portfolio') }}" class="{{ request()->routeIs('portfolio') ? 'active' : '' }}">Realisaties</a>
                 <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
                 <a href="{{ route('contact') }}" class="btn btn-primary plan-gesprek-btn">Plan een gesprek</a>
