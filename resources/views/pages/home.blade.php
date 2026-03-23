@@ -490,10 +490,11 @@
             <div>
                 <span class="eyebrow">Gebouwautomatisering & energiebeheer</span>
 
-                <h1>Meer controle over je energie, zonder in te boeten op comfort</h1>
+                <h1>Haal meer uit je energie, zonder in te boeten op comfort</h1>
 
                 <p class="lead">
-                    Wij integreren zonnepanelen, batterij, laadpaal en domotica in één slim systeem dat je energieverbruik automatisch optimaliseert en je comfort verhoogt.
+                    Wij integreren zonnepanelen, batterij, laadpaal en domotica in één slim systeem.
+                    Zo wordt je energieverbruik automatisch geoptimaliseerd, zonder dat jij iets hoeft te doen.
                 </p>
                 <div class="hero-actions">
                     <a href="{{ route('energy-check') }}" class="btn-primary">Start de energiecheck</a>
