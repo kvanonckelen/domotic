@@ -490,16 +490,10 @@
             <div>
                 <span class="eyebrow">Gebouwautomatisering & energiebeheer</span>
 
-                <h1>Slimme woningen, doordacht geïntegreerd.</h1>
+                <h1>Meer controle over je energie, zonder in te boeten op comfort</h1>
 
                 <p class="lead">
-                Volt-IT helpt architecten, installateurs en woningbouwers om
-                gebouwen slimmer en energie-efficiënter te maken via
-                geavanceerde gebouwautomatisering.
-
-                Van domotica en energiebeheer tot de integratie van
-                zonnepanelen, batterij, warmtepomp en laadpaal
-                in één intelligent systeem.
+                    Wij integreren zonnepanelen, batterij, laadpaal en domotica in één slim systeem dat je energieverbruik automatisch optimaliseert en je comfort verhoogt.
                 </p>
                 <div class="hero-actions">
                     <a href="{{ route('energy-check') }}" class="btn-primary">Start de energiecheck</a>
